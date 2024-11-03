@@ -1,0 +1,487 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: white;
+    backdrop-filter: none;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+li a {
+    position: relative;
+    color: black;
+    font-weight: 300;
+}
+
+li a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, #62cff4, #2c67f2);
+}
+
+li a:hover::before {
+    width: 100%;
+}
+
+.visit_btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, #62cff4, #2c67f2);
+}
+
+.visit_btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #2c67f2, #62cff4);
+}
+.visit_btn i {
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+
+#menu-icon {
+    font-size: 2rem;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.info-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.info-box h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.info-box span {
+    background: linear-gradient(to right, #2c67f2, #62cff4); /* Modified */
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.socials i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+    transform: scale(1.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.experience img {
+    width: 24vw;
+    border-radius: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.grid-card {
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.grid-card:hover {
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}
+
+.grid-card i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid-card span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #62cff4, #2c67f2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #62cff4, #2c67f2);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-10px) scale(1.02);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project-card:hover .btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.project-card:hover .btn:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.project-card h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.input-box input {
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 1rem 7rem;
+    font-size: 2rem;
+}
+
+.input-box input::placeholder {
+    font-size: 2.5rem;
+}
+
+.input {
+    position: relative;
+}
+
+.input i {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 50%;
+    left: 10px;
+    transform: translate(50%, -50%);
+}
+
+.btn-sub {
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-sub:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer ul li a {
+    color: black;
+    font-weight: 600;
+}
+
+.copyright {
+    font-size: 300;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container {
+        gap: 3rem;
+    }
+    .experience-info {
+        flex-direction: column;
+    }
+    .input-box {
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input input::placeholder {
+        font-size: 2.5rem;
+    }
+    .input-box i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    header .logo {
+        font-size: 1rem;
+    }
+    header .visit_btn {
+        display: none;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .input-box input {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+    .info-box input::placeholder {
+        font-size: 1.5rem;
+    }
+    .input-box i {
+        display: none;
+    }
+    .btn-sub {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .experience-info img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    header #menu-icon {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links li {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: block;
+    }
+    header {
+        padding: 1rem 5rem;
+        gap: 8rem;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+    .about-container img {
+        width: 80vw;
+    }
+    .input-box input {
+        padding: 0.5rem 3rem;
+        width: 330px;
+        font-size: 1.5rem;
+    }
+    .input-box input::placeholder {
+        font-size: 1.5rem;
+    }
+    .btn-sub {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 2rem;
+    }
+    footer ul {
+        gap: 1rem;
+    }
+}

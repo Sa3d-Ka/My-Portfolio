@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Saad Kanani</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><span>Saad Kanani</span></a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Project</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <button class="visit_btn" onclick="window.open('https://www.linkedin.com/in/saad-kanani/', '_blank')">
+        Visit LinkedIn
+        <i class="fab fa-linkedin"></i>
+      </button>
+    </header>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <img src="images/logo.jpg" alt="logo" />
+        <div class="info-box">
+          <div class="text">
+            <h3>Hi, I'm</h3>
+            <h1>Saad Kanani</h1>
+            <span>Full Stack Developer</span>
+          </div>
+          <div class="btn-group">
+            <div class="btn" onclick="window.open('CV.pdf')">Download CV</div>
+            <div class="btn">Contact</div>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-github" onclick="window.open('https://github.com/Sa3d-Ka', '_blank')"></i>
+            <i class="fa-brands fa-linkedin" onclick="window.open('https://www.linkedin.com/in/saad-kanani/', '_blank')"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-info">
+        <div class="grid">
+          <div class="grid-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Graphique design</span>
+            <h3>2 Years</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+              officia.
+            </p>
+          </div>
+          <div class="grid-card">
+            <i class="fa-regular fa-file-code"></i>
+            <span>Graphique design</span>
+            <h3>2 Years</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+              officia.
+            </p>
+          </div>
+          <div class="grid-card">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Graphique design</span>
+            <h3>2 Years</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+              officia.
+            </p>
+          </div>
+          <div class="grid-card">
+            <i class="fa-solid fa-list"></i>
+            <span>Graphique design</span>
+            <h3>2 Years</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+              officia.
+            </p>
+          </div>
+        </div>
+        <img src="images/logo.jpg" alt="logo" />
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Recent Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/img1.jpg" alt="project-1" />
+          <h3>Project 1</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+            officia.
+          </p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">GitHub Repo</div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/img2.png" alt="project-1" />
+          <h3>Project 2</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+            officia.
+          </p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">GitHub Repo</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/img3.png" alt="project-1" />
+          <h3>Project 3</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. placeat,
+            officia.
+          </p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">GitHub Repo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="input">
+          <input type="text" placeholder="example@email.com" />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div class="btn-sub">Submit</div>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <p class="copyright">&copy; All Rights Reserved | Saad Kanani</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
