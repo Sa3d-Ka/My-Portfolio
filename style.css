@@ -298,40 +298,75 @@ section {
     font-weight: 500;
 }
 
-.input-box {
+.contact {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack the title and form vertically */
     justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem; /* Add some padding for spacing */
+    gap: 2rem; /* Add spacing between the title and form */
+}
+
+.contact h2 {
+    color: #000000;
+    margin-bottom: 0; /* Ensure no extra margin */
     text-align: center;
-    gap: 2rem;
-    margin-top: 5rem;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
 }
 
-.input-box input {
-    border-radius: 3rem;
-    border: 2px solid black;
-    padding: 1rem 7rem;
-    font-size: 2rem;
+.contact form {
+    width: 600px;
+    text-align: center;
 }
 
-.input-box input::placeholder {
-    font-size: 2.5rem;
+form .input-box {
+    display: flex;
+    justify-content: space-between;
 }
 
-.input {
-    position: relative;
+.input-box .input-field {
+    width: 48.5%;
 }
 
-.input i {
-    position: absolute;
-    font-size: 2.5rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%, -50%);
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #000000;
+    margin: 12px 0;
 }
 
-.btn-sub {
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid rgb(0, 0, 0);
@@ -341,7 +376,7 @@ section {
     transition: 0.2s ease-in-out;
 }
 
-.btn-sub:hover {
+form button:hover {
     background-color: black;
     color: white;
 }
@@ -385,15 +420,17 @@ footer ul li a {
     .experience-info {
         flex-direction: column;
     }
-    .input-box {
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
+    .contact {
+        padding: 4rem 1.5rem;
+        gap: 2rem;
     }
-    .input input::placeholder {
-        font-size: 2.5rem;
+
+    .contact h2 {
+        font-size: 3.5rem;
     }
-    .input-box i {
-        font-size: 2.5rem;
+
+    .contact form {
+        width: 90%;
     }
 }
 
@@ -411,19 +448,32 @@ footer ul li a {
     .about-container {
         flex-direction: column;
     }
-    .input-box input {
-        padding: 1rem 2rem;
-        font-size: 1.8rem;
+    .contact {
+        padding: 3rem 1rem;
+        gap: 1.5rem;
     }
-    .info-box input::placeholder {
-        font-size: 1.5rem;
+
+    .contact h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
     }
-    .input-box i {
-        display: none;
+
+    .contact form {
+        width: 100%;
     }
-    .btn-sub {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
+
+    form .input-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+
+    form button {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
     }
     .grid {
         grid-template-columns: repeat(1, 1fr);
@@ -468,18 +518,32 @@ footer ul li a {
     .about-container img {
         width: 80vw;
     }
-    .input-box input {
-        padding: 0.5rem 3rem;
-        width: 330px;
-        font-size: 1.5rem;
+    .contact {
+        padding: 2rem 1rem;
+        gap: 1rem;
     }
-    .input-box input::placeholder {
-        font-size: 1.5rem;
+
+    .contact h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
-    .btn-sub {
+
+    .contact form {
+        width: 100%;
+    }
+
+    form .input-box {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+    }
+
+    form button {
         padding: 0.4rem 1rem;
         font-size: 0.9rem;
-        border-radius: 2rem;
     }
     footer ul {
         gap: 1rem;
