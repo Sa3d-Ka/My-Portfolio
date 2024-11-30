@@ -34,7 +34,10 @@
 
       <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-      <button class="visit_btn" onclick="window.open('https://www.linkedin.com/in/saad-kanani/', '_blank')">
+      <button
+        class="visit_btn"
+        onclick="window.open('https://www.linkedin.com/in/saad-kanani/', '_blank')"
+      >
         Visit LinkedIn
         <i class="fab fa-linkedin"></i>
       </button>
@@ -54,8 +57,14 @@
             <div class="btn">Contact</div>
           </div>
           <div class="socials">
-            <i class="fa-brands fa-github" onclick="window.open('https://github.com/Sa3d-Ka', '_blank')"></i>
-            <i class="fa-brands fa-linkedin" onclick="window.open('https://www.linkedin.com/in/saad-kanani/', '_blank')"></i>
+            <i
+              class="fa-brands fa-github"
+              onclick="window.open('https://github.com/Sa3d-Ka', '_blank')"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin"
+              onclick="window.open('https://www.linkedin.com/in/saad-kanani/', '_blank')"
+            ></i>
           </div>
         </div>
       </div>
@@ -150,17 +159,70 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="input-box">
-        <h2 class="section-title">Contact Me</h2>
+    <section class="contact">
+      <h2>Contact Me!</h2>
 
-        <div class="input">
-          <input type="text" placeholder="example@email.com" />
-          <i class="fa-solid fa-envelope"></i>
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Full Name cannot be empty</div>
+          </div>
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Email Address"
+              id="email"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt email">Email Address cannot be empty</div>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              id="phone"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Phone Number cannot be empty</div>
+          </div>
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Subject cannot be empty</div>
+          </div>
         </div>
 
-        <div class="btn-sub">Submit</div>
-      </div>
+        <div class="textarea-field field">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="item"
+            autocomplete="off"
+          ></textarea>
+          <div class="error-txt">Message cannot be empty</div>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
 
     <footer>
