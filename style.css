@@ -141,7 +141,7 @@ section {
 }
 
 .info-box span {
-    background: linear-gradient(to right, #2c67f2, #62cff4); /* Modified */
+    background: linear-gradient(to right, #2c67f2, #62cff4);
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -300,16 +300,16 @@ section {
 
 .contact {
     display: flex;
-    flex-direction: column; /* Stack the title and form vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 2rem; /* Add some padding for spacing */
-    gap: 2rem; /* Add spacing between the title and form */
+    padding: 5rem 2rem;
+    gap: 2rem;
 }
 
 .contact h2 {
     color: #000000;
-    margin-bottom: 0; /* Ensure no extra margin */
+    margin-bottom: 0;
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
