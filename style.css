@@ -1,3 +1,8 @@
+@font-face {
+    font-family: logoFont;
+    src: url(fonts/PerspectiveSans-BlackItalic.otf);
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -27,11 +32,11 @@ header {
 }
 
 
-.logo {
-    color: black;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-wrap: nowrap;
+.logo img{
+    width: 140px;
+    height: 40px;
+}
+.logo{
     transition: 0.3s ease-in-out;
 }
 
