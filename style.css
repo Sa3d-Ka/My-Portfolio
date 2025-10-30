@@ -2,12 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Momo Trust Sans", sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
 }
-
+body{
+    background-color: rgb(240, 240, 240);
+}
 header {
     position: fixed;
     top: 1rem;
