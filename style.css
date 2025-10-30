@@ -6,6 +6,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
+    background: linear-gradient();
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: white;
+    background:linear-gradient(90deg,rgba(118, 191, 219, 0.82) 0%, rgba(83, 237, 237, 1) 100%);;
     backdrop-filter: none;
     color: black;
     padding: 0.5rem 1.5rem;
